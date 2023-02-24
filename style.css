@@ -265,7 +265,7 @@ header {
 }
 
 #contactUs {
-  height: 90vh;
+  height: 0vh;
   padding: 50px 0;
 }
 
@@ -407,10 +407,10 @@ header {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .slogan {
-    padding: 30px 30px;
+    padding: 85px 30px;
   }
   #aboutUs {
-    height: 140vh;
+    height: 110vh;
   }
   .col.actualProduct {
     height: 70vh;
@@ -433,7 +433,7 @@ header {
     padding: 0 50px;
   }
   #seciton-product {
-    height: 230vh;
+    height: 190vh;
   }
   .feedbackDrawer {
     display: flex;
@@ -447,13 +447,16 @@ header {
 
   #customerFeedback {
     padding: 5px;
-    height: 260vh;
+    height: 190vh;
   }
   .col.feedbacks {
     margin-left: 10px;
   }
   .contact-form {
-    height: 90vh;
+    height: 75vh;
+  }
+  #contactUs {
+    height: 80vh;
   }
   .form-group label {
     font-size: 15px;
@@ -496,9 +499,9 @@ header {
     height: 105vh;
   }
   #contactUs {
-    height: 110vh;
+    height: 90vh;
   }
   .contact-form {
-    height: 100vh;
+    height: 80vh;
   }
 }
