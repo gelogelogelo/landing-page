@@ -168,7 +168,7 @@ header {
 }
 
 #seciton-product {
-  height: 70vh;
+  height: 80vh;
 }
 
 .product-container {
@@ -203,15 +203,126 @@ header {
   margin-top: 10px;
 }
 
-#contactUs {
-  height: 100vh;
-  background: blue;
-  padding: 40px 0;
+#customerFeedback {
+  height: 80vh;
+  padding-top: 50px;
+  background: #1e183b;
 }
-.contact {
-  height: 90vh;
+.feedbackContainer h4 {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+}
+.col.feedbacks {
+  background: white;
+  margin-right: 10px;
 }
 
+.feedbacks {
+  height: 25vh;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.2);
+}
+
+.user_profile {
+  display: flex;
+  padding: 10px;
+
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 10px;
+  background: #403c66;
+}
+
+.user_profile h4 {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.avatar-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.user_feedbacks {
+  padding: 10px;
+}
+.user_feedbacks p {
+  line-height: 1.3em;
+}
+
+.user_feedbacks p::before {
+  content: open-quote;
+  color: red;
+  font-size: 40px;
+}
+.user_feedbacks p::after {
+  content: close-quote;
+  color: red;
+  font-size: 40px;
+}
+
+#contactUs {
+  height: 90vh;
+  padding: 50px 0;
+}
+
+.contact-form {
+  height: 80vh;
+  box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.2);
+  padding: 40px;
+  background-image: linear-gradient(135deg, #1e183b 10%, #0093e9 100%);
+  color: white;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group text-area {
+  height: 50px;
+}
+
+.btn-submit {
+  width: 100px;
+}
+
+#footer {
+  height: 25vh;
+  background: #1e183b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.disclaimer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.soc-med-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.soc-med-icon:hover {
+  transform: scale(1.5);
+}
+
+#credits h4 {
+  color: white;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-left: 10px;
+}
 /* responsiveness */
 
 @media (max-width: 992px) {
@@ -265,6 +376,32 @@ header {
   .col.actualProduct {
     padding: 10px 12rem;
   }
+  #seciton-product {
+    height: 235vh;
+    padding-top: 70px;
+  }
+  .feedbackDrawer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .user_profile {
+    width: 30%;
+  }
+  #customerFeedback {
+    height: 205vh;
+  }
+  .product-image.side.right,
+  .product-image.side.left {
+    padding-left: 50px;
+  }
+  .contact-form {
+    height: 100vh;
+  }
+  #contactUs {
+    height: 110vh;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -296,7 +433,39 @@ header {
     padding: 0 50px;
   }
   #seciton-product {
-    height: 200vh;
+    height: 230vh;
+  }
+  .feedbackDrawer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .user_profile {
+    width: 80%;
+  }
+
+  #customerFeedback {
+    padding: 5px;
+    height: 260vh;
+  }
+  .col.feedbacks {
+    margin-left: 10px;
+  }
+  .contact-form {
+    height: 90vh;
+  }
+  .form-group label {
+    font-size: 15px;
+  }
+  .form-group input {
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #customerFeedback {
+    padding: 5px;
+    height: 250vh;
   }
 }
 
@@ -316,5 +485,20 @@ header {
   }
   .product-image {
     height: 40vh;
+  }
+  .user_profile {
+    width: 70%;
+  }
+  .feedbacks {
+    height: 32vh;
+  }
+  #customerFeedback {
+    height: 105vh;
+  }
+  #contactUs {
+    height: 110vh;
+  }
+  .contact-form {
+    height: 100vh;
   }
 }
