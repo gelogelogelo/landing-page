@@ -138,6 +138,9 @@ header {
   display: flex;
   gap: 10px;
 }
+.aboutUsContainer {
+  margin-top: 20px;
+}
 .left-side-container {
   flex: 1;
   padding: 20px;
@@ -177,6 +180,7 @@ header {
   background: #ecebf5;
   padding: 20px 60px;
   text-algn: center;
+  border-radius: 10px;
 }
 .col.actualProduct p,
 .col.actualProduct h4 {
@@ -199,6 +203,15 @@ header {
   margin-top: 10px;
 }
 
+#contactUs {
+  height: 100vh;
+  background: blue;
+  padding: 40px 0;
+}
+.contact {
+  height: 90vh;
+}
+
 /* responsiveness */
 
 @media (max-width: 992px) {
@@ -214,10 +227,10 @@ header {
     display: block;
   }
   .slogan {
-    padding: 30px 30px;
+    padding: 150px 30px;
   }
   .slogan h3 {
-    font-size: 30px;
+    font-size: 49px;
   }
   .slogan p {
     font-size: 15px;
@@ -238,5 +251,70 @@ header {
   #aboutUs-background {
     height: 70%;
     width: 70%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #aboutUs {
+    height: 140vh;
+  }
+  .product-container {
+    flex-direction: column;
+  }
+  .col.actualProduct {
+    padding: 10px 12rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .slogan {
+    padding: 30px 30px;
+  }
+  #aboutUs {
+    height: 140vh;
+  }
+  .col.actualProduct {
+    height: 70vh;
+  }
+  .product-container {
+    gap: 20px;
+    width: 100%;
+    margin-left: 1.2px;
+  }
+  .product-image.side {
+    margin: 0;
+  }
+  .product-image.mid {
+    margin-right: 30px;
+  }
+  .col.actualProduct:nth-child(2) {
+    padding: 0 50px;
+  }
+  .col.actualProduct {
+    padding: 0 50px;
+  }
+  #seciton-product {
+    height: 200vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+  #aboutUs {
+    height: 100vh;
+  }
+  .col.actualProduct {
+    background: #ecebf5;
+    padding: 20px 50px;
+    text-algn: center;
+    border-radius: 10px;
+  }
+  .product-image.side.right {
+    margin-top: 30px;
+  }
+  .product-image {
+    height: 40vh;
   }
 }
